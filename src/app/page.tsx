@@ -8,7 +8,7 @@ export default function Home() {
   const firstImage = HOME_IMAGES[0];
 
   return (
-    <div className="grid h-screen w-screen font-arial font-bold">
+    <div className="grid h-screen w-screen font-arial font-bold tracking-wider">
       <div className="col-start-1 row-start-1 h-full w-full flex flex-col justify-between p-8 z-10 pointer-events-none">
         <div className="flex justify-between pointer-events-auto">
           <Link href="/">LETI RYDER</Link>
@@ -38,7 +38,9 @@ export default function Home() {
             sizes={"100vw"}
             quality={90}
           />
-          <p className="font-arial-italic font-normal">{firstImage.description}</p>
+          <p className="font-arial-italic font-normal">
+            {firstImage.description}
+          </p>
         </div>
       )}
 

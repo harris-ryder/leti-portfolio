@@ -23,24 +23,22 @@ export default function Home() {
       {/* Server-rendered fallback image */}
       {firstImage && (
         <div className="col-start-1 row-start-1 place-self-center w-full h-full flex flex-col justify-center items-center gap-4 pointer-events-none">
-          <div
+          <Image
+            src={firstImage.src}
+            alt={firstImage.description || "Gallery image"}
+            width={1000}
+            height={1000}
             style={{
-              width: "100%",
+              width: "auto",
+              height: "auto",
+              maxWidth: "100%",
               maxHeight: "calc(100vh - 120px)",
-              position: "relative",
-              aspectRatio: "16 / 9",
+              objectFit: "contain",
             }}
-          >
-            <Image
-              src={firstImage.src}
-              alt={firstImage.description || "Gallery image"}
-              fill
-              style={{ objectFit: "contain" }}
-              priority
-              sizes="100vw"
-              quality={90}
-            />
-          </div>
+            priority
+            sizes="100vw"
+            quality={90}
+          />
         </div>
       )}
 

@@ -16,7 +16,7 @@ export default function ImageViewer({
   width,
   priority = false,
 }: ImageViewerProps) {
-  const { deviceType } = useDeviceType();
+  const { isLargerThan } = useDeviceType();
 
   if (!src) {
     return (
@@ -28,24 +28,22 @@ export default function ImageViewer({
 
   return (
     <div className="w-full h-full flex flex-col justify-center items-center gap-4">
-      <div
+      <Image
+        src={src}
+        alt={description || "Gallery image"}
+        width={1000}
+        height={1000}
         style={{
-          width: "100%",
+          width: "auto",
+          height: "auto",
           maxHeight: "calc(100vh - 120px)",
-          position: "relative",
-          aspectRatio: "16 / 9",
+          maxWidth: "100%",
+          objectFit: "contain",
         }}
-      >
-        <Image
-          src={src}
-          alt={description || "Gallery image"}
-          fill
-          style={{ objectFit: "contain" }}
-          priority={priority}
-          sizes={deviceType === "sm" ? "100vw" : `${width}vw`}
-          quality={90}
-        />
-      </div>
+        priority={priority}
+        sizes={isLargerThan("sm") ? `${width}vw` : "100vw"}
+        quality={90}
+      />
       <p className="font-arial-italic font-normal">{description}</p>
     </div>
   );

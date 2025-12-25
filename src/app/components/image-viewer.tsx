@@ -43,7 +43,6 @@ export default function ImageViewer({
           maxHeight: "calc(100vh - 120px)",
           objectFit: "contain",
           cursor: "pointer",
-          border: "1px solid red",
         }}
         priority={priority}
         sizes={isLargerThan("sm") ? `${width}vw` : "100vw"}

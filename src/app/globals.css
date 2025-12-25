@@ -117,10 +117,12 @@
   }
 }
 
-body {
+html, body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  height: 100%;
 }
 
 /* Custom utility classes for Arial fonts */

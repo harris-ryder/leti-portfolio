@@ -8,7 +8,7 @@ export default function Home() {
   const firstImage = HOME_IMAGES[0];
 
   return (
-    <div className="grid h-screen w-screen font-arial font-bold">
+    <div className="grid h-[100dvh] w-screen font-arial font-bold overflow-hidden">
       <div className="col-start-1 row-start-1 h-full w-full flex flex-col justify-between py-9 px-10 z-10 pointer-events-none tracking-wider">
         <div className="flex justify-between pointer-events-auto">
           <Link href="/">LETI RYDER</Link>

@@ -21,10 +21,10 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
     if (timerRef.current) {
       clearTimeout(timerRef.current);
     }
-    
+
     // Go to next image
     goToNextImage();
-    
+
     // Restart timer
     timerRef.current = setTimeout(goToNextImage, 3000);
   };
@@ -41,10 +41,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
   }, [projectIndex, images.length]);
 
   return (
-    <div
-      className="w-full h-full col-start-1 row-start-1 place-self-center cursor-pointer relative bg-white"
-      onClick={handleClick}
-    >
+    <div className="w-full h-full col-start-1 row-start-1 place-self-center relative bg-white">
       {images.map((image, index) => (
         <div
           key={index}
@@ -53,7 +50,11 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
             "w-full h-full"
           )}
         >
-          <ImageViewer {...image} priority={index < 3} />
+          <ImageViewer
+            {...image}
+            onImageClick={handleClick}
+            priority={index < 3}
+          />
         </div>
       ))}
     </div>

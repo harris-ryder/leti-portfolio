@@ -7,16 +7,16 @@ export interface ImageViewerProps {
   src: string;
   description?: string;
   width: number;
+  priority?: boolean;
 }
 
 export default function ImageViewer({
   src,
   description,
   width,
+  priority = false,
 }: ImageViewerProps) {
   const { deviceType } = useDeviceType();
-
-  console.log("src", src);
 
   if (!src) {
     return (
@@ -26,16 +26,26 @@ export default function ImageViewer({
     );
   }
 
-  const sizePercentage = deviceType === "sm" ? "100%" : `${width}%`;
-
   return (
-    <div className="flex flex-col justify-center items-center gap-4">
-      <img
-        src={src}
+    <div className="w-full h-full flex flex-col justify-center items-center gap-4">
+      <div
         style={{
-          width: `${width}%`,
+          width: "100%",
+          maxHeight: "calc(100vh - 120px)",
+          position: "relative",
+          aspectRatio: "16 / 9",
         }}
-      />
+      >
+        <Image
+          src={src}
+          alt={description || "Gallery image"}
+          fill
+          style={{ objectFit: "contain" }}
+          priority={priority}
+          sizes={deviceType === "sm" ? "100vw" : `${width}vw`}
+          quality={90}
+        />
+      </div>
       <p className="font-arial-italic font-normal">{description}</p>
     </div>
   );

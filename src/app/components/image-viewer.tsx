@@ -30,9 +30,9 @@ export default function ImageViewer({
   }
 
   return (
-    <div className="w-full h-full py-14">
-      <div className="w-full h-full flex flex-col justify-center items-center pt-18">
-        <div className="flex-1 w-full flex justify-center items-center">
+    <div className="w-full max-h-full h-full py-14 border border-green-500">
+      <div className="w-full h-full min-h-0 max-h-full overflow-hidden flex flex-col justify-center items-center mt-18">
+        <div className="flex-1 w-full flex min-h-0 max-h-full justify-center items-center border border-blue-500">
           <Image
             onClick={onImageClick}
             src={src}
@@ -40,14 +40,15 @@ export default function ImageViewer({
             width={1000}
             height={1000}
             style={{
-              width: isLargerThan("sm") ? `${width}%` : "100%",
+              maxWidth: isLargerThan("sm") ? `${width}%` : "100%",
+              maxHeight: "100%",
+              width: "auto",
               height: "auto",
-              maxHeight: "calc(100vh - 120px)",
               objectFit: "contain",
               cursor: "pointer",
             }}
             priority={priority}
-            sizes={isLargerThan("sm") ? `${width}vw` : "100vw"}
+            sizes={isLargerThan("sm") ? `${width}%` : "100%"}
             quality={90}
           />
         </div>

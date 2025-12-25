@@ -34,7 +34,7 @@ export default function Home() {
         </div>
       )}
 
-      <div className="w-full h-full pointer-events-auto border border-red-500">
+      <div className="w-full h-full pointer-events-auto border border-amber-600 z-10 relative">
         <ImageGallery images={HOME_IMAGES} />
       </div>
     </NavigationLayout>

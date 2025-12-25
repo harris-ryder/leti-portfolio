@@ -41,13 +41,13 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
   }, [projectIndex, images.length]);
 
   return (
-    <div className="w-full h-full col-start-1 row-start-1 place-self-center relative bg-white">
+    <div className="w-full h-full bg-white">
       {images.map((image, index) => (
         <div
           key={index}
           className={cn(
             index === projectIndex ? "block" : "hidden",
-            "w-full h-full"
+            "w-full h-full max-h-full"
           )}
         >
           <ImageViewer

@@ -14,7 +14,7 @@ export default function NavigationLayout({
           <Link href="/">LETI RYDER</Link>
           <Link href="/">CV</Link>
         </div>
-        {children}
+        <div className="flex-1 min-h-0 w-full">{children}</div>
         <div className="flex justify-between pointer-events-auto tracking-wider px-10">
           <Link href="/">PROJECTS</Link>
           <Link href="/">OTHER WORK</Link>

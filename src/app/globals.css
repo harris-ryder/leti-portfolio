@@ -110,12 +110,6 @@
   --font-arial-narrow-bold-italic: 'Arial Narrow Bold Italic', Arial, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 html, body {
   background: var(--background);

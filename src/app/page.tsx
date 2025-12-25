@@ -1,5 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
+
+import ImageViewer from "./components/image-viewer";
 
 export default function Home() {
   return (
@@ -16,9 +17,12 @@ export default function Home() {
       </div>
 
       <div className="col-start-1 row-start-1 place-self-center">
-        <span className="px-3 py-1 rounded bg-black/60 text-white">
-          Overlay
-        </span>
+        <ImageViewer
+          src="https://drive.google.com/uc?export=view&id=1aQj6JCVc515Fldllm887yHZ4cVoCC8Wj"
+          description="Home"
+          desktop={{ size: 1000, constraint: "width" }}
+          mobile={{ size: 500, constraint: "width" }}
+        />
       </div>
     </div>
   );

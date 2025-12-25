@@ -1,41 +1,89 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Arial Custom';
+  font-family: 'Arial Regular';
   src: url('/fonts/Arial/ARIAL.woff') format('woff');
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Arial Custom';
+  font-family: 'Arial Bold';
   src: url('/fonts/Arial/ARIALBD.woff') format('woff');
-  font-weight: 700;
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Arial Custom';
+  font-family: 'Arial Italic';
   src: url('/fonts/Arial/ARIALI.woff') format('woff');
-  font-weight: 400;
-  font-style: italic;
+  font-weight: normal;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Arial Custom';
+  font-family: 'Arial Bold Italic';
   src: url('/fonts/Arial/ARIALBI.woff') format('woff');
-  font-weight: 700;
-  font-style: italic;
+  font-weight: normal;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Arial Black';
   src: url('/fonts/Arial/ARIBLK.woff') format('woff');
-  font-weight: 900;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial Black Italic';
+  src: url('/fonts/Arial/ARIALBLACKITALIC.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial Narrow';
+  src: url('/fonts/Arial/ARIALN.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial Narrow Bold';
+  src: url('/fonts/Arial/ARIALNB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial Narrow Italic';
+  src: url('/fonts/Arial/ARIALNI.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial Narrow Bold Italic';
+  src: url('/fonts/Arial/ARIALNBI.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial Light Italic';
+  src: url('/fonts/Arial/ARIALLGTITL.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -50,8 +98,16 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-arial: 'Arial Custom', Arial, sans-serif;
+  --font-arial: 'Arial Regular', Arial, sans-serif;
+  --font-arial-bold: 'Arial Bold', Arial, sans-serif;
+  --font-arial-italic: 'Arial Italic', Arial, sans-serif;
+  --font-arial-bold-italic: 'Arial Bold Italic', Arial, sans-serif;
   --font-arial-black: 'Arial Black', Arial, sans-serif;
+  --font-arial-black-italic: 'Arial Black Italic', Arial, sans-serif;
+  --font-arial-narrow: 'Arial Narrow', Arial, sans-serif;
+  --font-arial-narrow-bold: 'Arial Narrow Bold', Arial, sans-serif;
+  --font-arial-narrow-italic: 'Arial Narrow Italic', Arial, sans-serif;
+  --font-arial-narrow-bold-italic: 'Arial Narrow Bold Italic', Arial, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -65,4 +121,9 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom utility classes for Arial fonts */
+.arial-italic {
+  font-family: 'Arial Italic' !important;
 }

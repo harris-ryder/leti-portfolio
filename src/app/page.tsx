@@ -1,6 +1,7 @@
 import Link from "next/link";
 
-import ImageViewer from "./components/image-viewer";
+import ImageGallery from "./components/image-gallery";
+import { HOME_IMAGES } from "./data/home";
 
 export default function Home() {
   return (
@@ -16,14 +17,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="col-start-1 row-start-1 place-self-center">
-        <ImageViewer
-          src="https://drive.google.com/uc?export=view&id=1aQj6JCVc515Fldllm887yHZ4cVoCC8Wj"
-          description="Home"
-          desktop={{ size: 1000, constraint: "width" }}
-          mobile={{ size: 500, constraint: "width" }}
-        />
-      </div>
+      <ImageGallery images={HOME_IMAGES} />
     </div>
   );
 }

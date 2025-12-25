@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useDeviceType } from "../hooks/use-device-type";
 
-interface ImageViewerProps {
+export interface ImageViewerProps {
   src: string;
   description?: string;
   desktop: {
@@ -23,6 +23,9 @@ export default function ImageViewer({
   mobile,
 }: ImageViewerProps) {
   const { deviceType } = useDeviceType();
+
+  console.log("src", src);
+
   if (!src) {
     return (
       <div className="flex flex-col items-center justify-center">
@@ -31,16 +34,18 @@ export default function ImageViewer({
     );
   }
 
+  const config = deviceType === "sm" ? mobile : desktop;
+  const sizePercentage = `${config.size}%`;
+
   return (
     <div className="flex flex-col justify-center items-center gap-4">
-      <Image
+      <img
         src={src}
-        alt={description || "Image"}
-        className="object-contain"
-        width={deviceType === "sm" ? desktop.size : mobile.size}
-        height={deviceType === "sm" ? desktop.size : mobile.size}
+        style={{
+          width: sizePercentage,
+        }}
       />
-      <p className="font-arial-italic">{description}</p>
+      <p className="font-arial-italic font-normal">{description}</p>
     </div>
   );
 }

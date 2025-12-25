@@ -6,21 +6,13 @@ import { useDeviceType } from "../hooks/use-device-type";
 export interface ImageViewerProps {
   src: string;
   description?: string;
-  desktop: {
-    size: number;
-    constraint: "width" | "height";
-  };
-  mobile: {
-    size: number;
-    constraint: "width" | "height";
-  };
+  width: number;
 }
 
 export default function ImageViewer({
   src,
   description,
-  desktop,
-  mobile,
+  width,
 }: ImageViewerProps) {
   const { deviceType } = useDeviceType();
 
@@ -34,15 +26,14 @@ export default function ImageViewer({
     );
   }
 
-  const config = deviceType === "sm" ? mobile : desktop;
-  const sizePercentage = `${config.size}%`;
+  const sizePercentage = deviceType === "sm" ? "100%" : `${width}%`;
 
   return (
     <div className="flex flex-col justify-center items-center gap-4">
       <img
         src={src}
         style={{
-          width: sizePercentage,
+          width: `${width}%`,
         }}
       />
       <p className="font-arial-italic font-normal">{description}</p>

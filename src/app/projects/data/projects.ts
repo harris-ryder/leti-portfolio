@@ -30,7 +30,7 @@ export const PROJECTS: Project[] = [
   },
   {
     description: "Barcelona by Hand",
-    src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/barcelona-by-hand/1.webp",
+    src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/barcelona-by-hand/2.webp",
   },
   {
     description: "Strange Bedfellows",

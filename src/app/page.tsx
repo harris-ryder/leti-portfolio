@@ -29,16 +29,16 @@ export default function Home() {
             width={1000}
             height={1000}
             style={{
-              width: "auto",
+              width: `${firstImage.width}%`,
               height: "auto",
-              maxWidth: "100%",
               maxHeight: "calc(100vh - 120px)",
               objectFit: "contain",
             }}
             priority
-            sizes="100vw"
+            sizes={"100vw"}
             quality={90}
           />
+          <p className="font-arial-italic font-normal">{firstImage.description}</p>
         </div>
       )}
 

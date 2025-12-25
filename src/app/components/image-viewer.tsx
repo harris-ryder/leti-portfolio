@@ -34,17 +34,18 @@ export default function ImageViewer({
         width={1000}
         height={1000}
         style={{
-          width: "auto",
+          width: isLargerThan("sm") ? `${width}%` : "100%",
           height: "auto",
           maxHeight: "calc(100vh - 120px)",
-          maxWidth: "100%",
           objectFit: "contain",
         }}
         priority={priority}
         sizes={isLargerThan("sm") ? `${width}vw` : "100vw"}
         quality={90}
       />
-      <p className="font-arial-italic font-normal">{description}</p>
+      <p className="fixed bottom-[100px] left-1/2 -translate-x-1/2 font-arial-italic font-normal">
+        {description}
+      </p>
     </div>
   );
 }

@@ -13,7 +13,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
 
   return (
     <div
-      className="w-full h-full col-start-1 row-start-1 place-self-center cursor-pointer relative"
+      className="w-full h-full col-start-1 row-start-1 place-self-center cursor-pointer relative bg-white"
       onClick={() =>
         setProjectIndex((prevIndex) => (prevIndex + 1) % images.length)
       }

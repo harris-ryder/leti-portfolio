@@ -1,21 +1,48 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import ImageGallery from "./components/image-gallery";
 import { HOME_IMAGES } from "./data/home";
 
 export default function Home() {
+  const firstImage = HOME_IMAGES[0];
+
   return (
     <div className="grid h-screen w-screen font-arial font-bold">
-      <div className="col-start-1 row-start-1 h-full w-full flex flex-col justify-between p-8">
-        <div className="flex justify-between">
+      <div className="col-start-1 row-start-1 h-full w-full flex flex-col justify-between p-8 z-10 pointer-events-none">
+        <div className="flex justify-between pointer-events-auto">
           <Link href="/">LETI RYDER</Link>
           <Link href="/">CV</Link>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between pointer-events-auto">
           <Link href="/">PROJECTS</Link>
           <Link href="/">OTHER WORK</Link>
         </div>
       </div>
+
+      {/* Server-rendered fallback image */}
+      {firstImage && (
+        <div className="col-start-1 row-start-1 place-self-center w-full h-full flex flex-col justify-center items-center gap-4 pointer-events-none">
+          <div
+            style={{
+              width: "100%",
+              maxHeight: "calc(100vh - 120px)",
+              position: "relative",
+              aspectRatio: "16 / 9",
+            }}
+          >
+            <Image
+              src={firstImage.src}
+              alt={firstImage.description || "Gallery image"}
+              fill
+              style={{ objectFit: "contain" }}
+              priority
+              sizes="100vw"
+              quality={90}
+            />
+          </div>
+        </div>
+      )}
 
       <ImageGallery images={HOME_IMAGES} />
     </div>

@@ -30,38 +30,41 @@ export default function ImageViewer({
   }
 
   return (
-    <div className="w-full max-h-full h-full py-14 border border-green-500">
-      <div className="w-full h-full min-h-0 max-h-full overflow-hidden flex flex-col justify-center items-center mt-18">
-        <div className="flex-1 w-full flex min-h-0 max-h-full justify-center items-center border border-blue-500">
-          <Image
-            onClick={onImageClick}
-            src={src}
-            alt={description || "Gallery image"}
-            width={1000}
-            height={1000}
-            style={{
-              maxWidth: isLargerThan("sm") ? `${width}%` : "100%",
-              maxHeight: "100%",
-              width: "auto",
-              height: "auto",
-              objectFit: "contain",
-              cursor: "pointer",
-            }}
-            priority={priority}
-            sizes={isLargerThan("sm") ? `${width}%` : "100%"}
-            quality={90}
-          />
-        </div>
-
-        <Link
-          href="/"
-          className={
-            "font-arial-italic font-normal group hover:underline pb-12"
-          }
-        >
-          {description}
-        </Link>
+    <div className="w-full max-h-full h-full flex flex-col items-center">
+      <Link
+        href="/"
+        className={
+          "font-arial-italic font-normal group hover:underline pb-12 opacity-0 pointer-events-none"
+        }
+      >
+        {description}
+      </Link>
+      <div className="flex-1 w-full min-h-0 flex items-center justify-center">
+        <Image
+          onClick={onImageClick}
+          src={src}
+          alt={description || "Gallery image"}
+          width={1000}
+          height={1000}
+          style={{
+            width: isLargerThan("sm") ? `${width}%` : "100%",
+            maxHeight: "100%",
+            height: "auto",
+            objectFit: "contain",
+            cursor: "pointer",
+          }}
+          priority={priority}
+          sizes={isLargerThan("sm") ? `${width}%` : "100%"}
+          quality={90}
+        />
       </div>
+
+      <Link
+        href="/"
+        className={"font-arial-italic font-normal group hover:underline pb-12"}
+      >
+        {description}
+      </Link>
     </div>
   );
 }

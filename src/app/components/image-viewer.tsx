@@ -9,7 +9,7 @@ export interface ImageViewerProps {
   description?: string;
   width: number;
   priority?: boolean;
-  onImageClick: () => void;
+  onImageClick?: () => void;
 }
 
 export default function ImageViewer({

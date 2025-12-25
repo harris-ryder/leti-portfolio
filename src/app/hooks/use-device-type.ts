@@ -13,8 +13,6 @@ const ORDER: DeviceTypeLabel[] = ["base", "sm", "md", "lg", "xl", "2xl"];
 export function useDeviceType() {
   const [deviceType, setDeviceType] = useState<DeviceTypeLabel>("lg");
 
-  console.log("deviceType", deviceType);
-
   useEffect(() => {
     const updateDeviceType = () => {
       const width = window.innerWidth;

@@ -55,7 +55,6 @@ export default function ImageViewer({
           }}
           priority={priority}
           sizes={isLargerThan("sm") ? `${width}%` : "100%"}
-          quality={90}
         />
       </div>
 

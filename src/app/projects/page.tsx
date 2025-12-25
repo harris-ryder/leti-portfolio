@@ -1,0 +1,33 @@
+import Image from "next/image";
+import NavigationLayout from "../components/navigation-layout";
+import { PROJECTS } from "./data/projects";
+
+export default function Projects() {
+  return (
+    <NavigationLayout>
+      <div className="w-full h-full min-h-0 overflow-y-auto p-6 px-10 md:flex md:justify-center md:items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {PROJECTS.map((project, index) => (
+            <div
+              key={index}
+              className="group cursor-pointer pointer-events-auto"
+            >
+              <div className="aspect-square overflow-hidden mb-3">
+                <Image
+                  src={project.src}
+                  alt={project.description}
+                  width={700}
+                  height={700}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <p className="font-arial-italic font-light text-sm text-center">
+                {project.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </NavigationLayout>
+  );
+}

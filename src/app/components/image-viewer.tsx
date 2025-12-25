@@ -30,32 +30,37 @@ export default function ImageViewer({
   }
 
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center gap-4">
-      <Image
-        onClick={onImageClick}
-        src={src}
-        alt={description || "Gallery image"}
-        width={1000}
-        height={1000}
-        style={{
-          width: isLargerThan("sm") ? `${width}%` : "100%",
-          height: "auto",
-          maxHeight: "calc(100vh - 120px)",
-          objectFit: "contain",
-          cursor: "pointer",
-        }}
-        priority={priority}
-        sizes={isLargerThan("sm") ? `${width}vw` : "100vw"}
-        quality={90}
-      />
+    <div className="w-full h-full py-14">
+      <div className="w-full h-full flex flex-col justify-center items-center pt-18">
+        <div className="flex-1 w-full flex justify-center items-center">
+          <Image
+            onClick={onImageClick}
+            src={src}
+            alt={description || "Gallery image"}
+            width={1000}
+            height={1000}
+            style={{
+              width: isLargerThan("sm") ? `${width}%` : "100%",
+              height: "auto",
+              maxHeight: "calc(100vh - 120px)",
+              objectFit: "contain",
+              cursor: "pointer",
+            }}
+            priority={priority}
+            sizes={isLargerThan("sm") ? `${width}vw` : "100vw"}
+            quality={90}
+          />
+        </div>
 
-      <Link
-        href="/"
-        className="fixed bottom-[100px] left-1/2 -translate-x-1/2 font-arial-italic font-normal group"
-      >
-        <div className="absolute -left-4 top-1/2 -translate-y-1/2 w-2 h-2 bg-black rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        {description}
-      </Link>
+        <Link
+          href="/"
+          className={
+            "font-arial-italic font-normal group hover:underline pb-12"
+          }
+        >
+          {description}
+        </Link>
+      </div>
     </div>
   );
 }

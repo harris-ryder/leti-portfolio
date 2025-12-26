@@ -10,7 +10,7 @@ export default function NavigationLayout({
       <div className="h-full w-full flex flex-col justify-between py-9">
         <div className="flex justify-between pointer-events-auto tracking-wider px-10">
           <Link href="/">LETI RYDER</Link>
-          <Link href="/">CV</Link>
+          <Link href="/cv">CV</Link>
         </div>
         <div className="flex-1 min-h-0 w-full">{children}</div>
         <div className="flex justify-between pointer-events-auto tracking-wider px-10">

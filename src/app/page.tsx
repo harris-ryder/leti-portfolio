@@ -2,11 +2,22 @@ import Link from "next/link";
 import Image from "next/image";
 
 import ImageGallery from "./components/image-gallery";
-import { HOME_IMAGES } from "./data/home";
 import NavigationLayout from "./components/navigation-layout";
+import { PROJECTS } from "./data/projects";
+import { ImageViewerProps } from "./components/image-viewer";
+
+const HOME_IMAGES = PROJECTS.flatMap((project) =>
+  project.homepageCovers.map((cover) => ({
+    ...cover,
+    projectId: project.id,
+    projectDescription: project.description,
+  }))
+);
 
 export default function Home() {
   const firstImage = HOME_IMAGES[0];
+
+  console.log(HOME_IMAGES);
 
   return (
     <NavigationLayout>
@@ -15,7 +26,7 @@ export default function Home() {
         <div className="absolute inset-0 flex flex-col justify-center items-center gap-4 pointer-events-none">
           <Image
             src={firstImage.src}
-            alt={firstImage.description || "Gallery image"}
+            alt={firstImage.src || "Gallery image"}
             width={1000}
             height={1000}
             style={{
@@ -29,7 +40,7 @@ export default function Home() {
             quality={90}
           />
           <p className="font-arial-italic font-normal">
-            {firstImage.description}
+            {firstImage.projectDescription}
           </p>
         </div>
       )}

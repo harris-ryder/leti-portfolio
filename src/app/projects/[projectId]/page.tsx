@@ -6,7 +6,7 @@ import {
   ProjectImage,
   ProjectText,
   ProjectTitle,
-} from "../data/projects";
+} from "../../data/projects";
 
 interface ProjectPageProps {
   params: Promise<{
@@ -59,14 +59,18 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <div key={index}>
               {isProjectImage(item) ? (
                 <div className="w-full">
-                  <div className={item.fit === "cover" ? "relative w-full" : ""}>
+                  <div
+                    className={item.fit === "cover" ? "relative w-full" : ""}
+                  >
                     <Image
                       src={item.src}
                       alt={item.description}
                       width={800}
                       height={800}
                       className={`w-full ${
-                        item.fit === "cover" ? "object-cover h-full" : "h-auto object-contain"
+                        item.fit === "cover"
+                          ? "object-cover h-full"
+                          : "h-auto object-contain"
                       }`}
                       style={item.fit === "cover" ? { maxHeight: "500px" } : {}}
                     />

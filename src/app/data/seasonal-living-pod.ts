@@ -1,4 +1,9 @@
-import { Project, ProjectImage, ProjectText } from "./projects";
+import {
+  Project,
+  ProjectHomepageCover,
+  ProjectImage,
+  ProjectText,
+} from "./projects";
 
 type ProjectArticle = Project["article"];
 
@@ -60,5 +65,12 @@ export const seasonalLivingPodArticle: ProjectArticle = [
     description: "Night view showing illuminated interior",
     fit: "contain",
     newLine: true,
+  },
+];
+
+export const seasonalLivingPodHomepageCovers: ProjectHomepageCover[] = [
+  {
+    src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/seasonal-living-pod/1.webp",
+    width: 32,
   },
 ];

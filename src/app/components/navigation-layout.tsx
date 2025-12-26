@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { useDeviceType } from "../hooks/use-device-type";
 import Link from "next/link";
 
 export default function NavigationLayout({

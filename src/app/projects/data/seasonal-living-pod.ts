@@ -1,14 +1,20 @@
-import { ProjectImage, ProjectText } from "./projects";
+import { Project, ProjectImage, ProjectText } from "./projects";
 
-export const seasonalLivingPodArticle: Array<ProjectImage | ProjectText> = [
-  {
-    text: "The Seasonal Living Pod explores the relationship between temporary architecture and the cyclical nature of human habitation. This project challenges conventional notions of permanence in residential design.",
-    newLine: true,
-  },
+type ProjectArticle = Project["article"];
+
+export const seasonalLivingPodArticle: ProjectArticle = [
   {
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/seasonal-living-pod/1.webp",
     description: "Exterior view of the living pod in summer configuration",
-    fit: "contain",
+    fit: "cover",
+    newLine: false,
+  },
+  {
+    title: "Seasonal Living Pod",
+    newLine: false,
+  },
+  {
+    text: "The Seasonal Living Pod explores the relationship between temporary architecture and the cyclical nature of human habitation. This project challenges conventional notions of permanence in residential design.",
     newLine: true,
   },
   {

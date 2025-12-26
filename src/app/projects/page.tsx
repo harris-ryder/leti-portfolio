@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import NavigationLayout from "../components/navigation-layout";
 import { PROJECTS } from "./data/projects";
 
@@ -9,8 +10,9 @@ export default function Projects() {
         <div className="min-h-full flex justify-center items-center">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {PROJECTS.map((project, index) => (
-            <div
+            <Link
               key={index}
+              href={`/projects/${project.id}`}
               className="group cursor-pointer pointer-events-auto"
             >
               <div className="aspect-square overflow-hidden mb-3">
@@ -25,7 +27,7 @@ export default function Projects() {
               <p className="font-arial-italic font-light text-sm text-center">
                 {project.description}
               </p>
-            </div>
+            </Link>
           ))}
           </div>
         </div>

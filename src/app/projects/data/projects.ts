@@ -4,7 +4,12 @@ export interface Project {
   description: string;
   id: string;
   src: string;
-  article: Array<ProjectImage | ProjectText>;
+  article: Array<ProjectImage | ProjectText | ProjectTitle>;
+}
+
+export interface ProjectTitle {
+  title: string;
+  newLine: boolean;
 }
 
 export interface ProjectImage {

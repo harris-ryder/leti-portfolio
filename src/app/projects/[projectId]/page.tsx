@@ -6,7 +6,7 @@ import {
   ProjectImage,
   ProjectText,
   ProjectTitle,
-} from "../../data/projects";
+} from "../../data/projects/projects";
 
 interface ProjectPageProps {
   params: Promise<{

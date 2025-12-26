@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import ImageGallery from "./components/image-gallery";
 import NavigationLayout from "./components/navigation-layout";
-import { PROJECTS } from "./data/projects";
+import { PROJECTS } from "./data/projects/projects";
 import { ImageViewerProps } from "./components/image-viewer";
 
 const HOME_IMAGES = PROJECTS.flatMap((project) =>

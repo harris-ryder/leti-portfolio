@@ -3,11 +3,12 @@
 import Image from "next/image";
 import { useDeviceType } from "../hooks/use-device-type";
 import Link from "next/link";
+import { cn } from "../utils";
 
 export interface ImageViewerProps {
   src: string;
   projectDescription: string;
-  projectId: string;
+  projectId?: string;
   width: number;
   priority?: boolean;
   onImageClick?: () => void;
@@ -61,8 +62,11 @@ export default function ImageViewer({
       </div>
 
       <Link
-        href={`/projects/${projectId}`}
-        className={"font-arial-italic font-normal group hover:underline pb-12"}
+        href={projectId ? `/projects/${projectId}` : "/"}
+        className={cn(
+          "font-arial-italic font-normal group pb-12 cursor-default",
+          projectId && "hover:underline cursor-pointer"
+        )}
       >
         {projectDescription}
       </Link>

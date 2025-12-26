@@ -7,7 +7,7 @@ export const strangeBedfellowsHomepageCovers: ProjectHomepageCover[] = [
   },
   {
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/strange-bedfellows/8.webp",
-    width: 100,
+    width: 85,
   },
   {
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/strange-bedfellows/12.webp",

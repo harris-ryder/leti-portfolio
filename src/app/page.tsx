@@ -13,9 +13,15 @@ const HOME_IMAGES = PROJECTS.flatMap((project) =>
 );
 
 export default function Home() {
-  const firstImage = HOME_IMAGES[0];
-
-  console.log(HOME_IMAGES);
+  const homeImages = [
+    ...HOME_IMAGES,
+    {
+      projectDescription: "Pidgin 33 Cover Design",
+      src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/misc/1.webp",
+      width: 50,
+    },
+  ];
+  const firstImage = homeImages[0];
 
   return (
     <NavigationLayout>
@@ -44,7 +50,7 @@ export default function Home() {
       )}
 
       <div className="w-full h-full pointer-events-auto z-10 relative">
-        <ImageGallery images={HOME_IMAGES} />
+        <ImageGallery images={homeImages} />
       </div>
     </NavigationLayout>
   );

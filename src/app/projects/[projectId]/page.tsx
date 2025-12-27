@@ -50,6 +50,17 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     }
   });
 
+  if (project.article.length === 0) {
+    return (
+      <NavigationLayout>
+        <div className="h-full w-full flex flex-col justify-center items-center font-arial-italic font-light">
+          <p>{project.description}</p>
+          <p> "In progress."</p>
+        </div>
+      </NavigationLayout>
+    );
+  }
+
   return (
     <NavigationLayout>
       {/* Mobile/Tablet: Single column with vertical scroll */}

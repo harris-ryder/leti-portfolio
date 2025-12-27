@@ -62,50 +62,75 @@ export default function CVPage() {
               Publications
             </h2>
             <div className="flex flex-col gap-2">
-              <p className="font-arial text-sm leading-relaxed">
-                12/ 2025{" "}
-                <a
-                  className="underline"
-                  href="https://ex-journal.com/ukam-cors"
-                >
-                  The E/X Journal
-                </a>
-                . Contributor{" "}
-              </p>
-              <p className="font-arial text-sm leading-relaxed">
-                11/ 2025{" "}
-                <a
-                  className="underline"
-                  href="https://www.park-books.com/en/produkt/public-spaces-ny/1661"
-                >
-                  Public Spaces, NY
-                </a>
-                . MOS. Research Assistant{" "}
-              </p>
-              <p className="font-arial text-sm leading-relaxed">
-                06/ 2025 Everything is in the Process of Becoming Something
-                Else, Venice Biennalle. MOS. Research Assistant{" "}
-              </p>
-              <p className="font-arial text-sm leading-relaxed">
-                05/ 2025{" "}
-                <a
-                  className="underline"
-                  href="https://www.pidgin.press/shop/p/issue-33"
-                >
-                  Pidgin Issue 33
-                </a>
-                . Cover Design{" "}
-              </p>
-              <p className="font-arial text-sm leading-relaxed">
-                09/ 2024 Photograph permanently on display at Prospect House,
-                commissioned by Princeton University Art Museum
-              </p>
-              <p className="font-arial text-sm leading-relaxed">
-                09/ 2021 Mixed Group Show at Gallerie V, Cambridge.
-                https://www.galleriev.com/Live/index.php?option=com_sppagebuilder&view=page&id=14
-              </p>
-              <p className="font-arial text-sm leading-relaxed">
-                05/ 2021{" "}
+              <div className="flex gap-2">
+                <p className="font-arial text-sm leading-relaxed whitespace-nowrap">
+                  12/ 2025{" "}
+                </p>
+                <span className="font-arial text-sm leading-relaxed">
+                  <a
+                    className="underline"
+                    href="https://ex-journal.com/ukam-cors"
+                  >
+                    The E/X Journal
+                  </a>{" "}
+                  Contributor
+                </span>
+              </div>
+
+              <div className="flex gap-2">
+                <p className="font-arial text-sm leading-relaxed whitespace-nowrap">
+                  11/ 2025{" "}
+                </p>
+                <span className="font-arial text-sm leading-relaxed">
+                  <a
+                    className="underline"
+                    href="https://www.park-books.com/en/produkt/public-spaces-ny/1661"
+                  >
+                    Public Spaces, NY
+                  </a>
+                  . MOS. Research Assistant{" "}
+                </span>
+              </div>
+
+              <div className="flex gap-2 font-arial text-sm leading-relaxed">
+                <p className="whitespace-nowrap"> 06/ 2025</p>{" "}
+                <p>
+                  Everything is in the Process of Becoming Something Else,
+                  Venice Biennalle. MOS. Research Assistant{" "}
+                </p>
+              </div>
+
+              <div className="flex gap-2 font-arial text-sm leading-relaxed">
+                <p className="font-arial text-sm leading-relaxed whitespace-nowrap">
+                  05/ 2025{" "}
+                </p>
+                <span>
+                  <a
+                    className="underline"
+                    href="https://www.pidgin.press/shop/p/issue-33"
+                  >
+                    Pidgin Issue 33
+                  </a>
+                  . Cover Design{" "}
+                </span>
+              </div>
+
+              <div className="font-arial text-sm leading-relaxed flex gap-2">
+                <p className="whitespace-nowrap">09/ 2024 </p> Photograph
+                permanently on display at Prospect House, commissioned by
+                Princeton University Art Museum
+              </div>
+              <span className="font-arial text-sm leading-relaxed flex gap-2">
+                <p className="whitespace-nowrap">09/ 2021 </p>
+                <span>
+                  <a href="https://www.galleriev.com/Live/index.php?option=com_sppagebuilder&view=page&id=14">
+                    Mixed Group Show at Gallerie V
+                  </a>
+                  , Cambridge.
+                </span>
+              </span>
+              <span className="font-arial text-sm leading-relaxed flex gap-2">
+                <p className="whitespace-nowrap">05/ 2021 </p>
                 <a
                   className="underline"
                   href="https://shop.varsity.co.uk/shop/product/mays-twenty-nine-2021"
@@ -113,7 +138,7 @@ export default function CVPage() {
                   The Mays 29
                 </a>
                 . Contributor
-              </p>
+              </span>
             </div>
           </div>
 

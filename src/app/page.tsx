@@ -18,7 +18,8 @@ export default function Home() {
     {
       projectDescription: "Pidgin 33 Cover Design",
       src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/misc/1.webp",
-      width: 50,
+      desktopWidth: 50,
+      mobileWidth: 100,
     },
   ];
   const firstImage = homeImages[0];
@@ -34,7 +35,7 @@ export default function Home() {
             width={1000}
             height={1000}
             style={{
-              width: `${firstImage.width}%`,
+              width: `${firstImage.desktopWidth}%`,
               height: "auto",
               maxHeight: "calc(100vh - 120px)",
               objectFit: "contain",

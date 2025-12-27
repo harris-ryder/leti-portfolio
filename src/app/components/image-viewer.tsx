@@ -9,7 +9,8 @@ export interface ImageViewerProps {
   src: string;
   projectDescription: string;
   projectId?: string;
-  width: number;
+  desktopWidth: number;
+  mobileWidth: number;
   priority?: boolean;
   onImageClick?: () => void;
 }
@@ -18,7 +19,8 @@ export default function ImageViewer({
   src,
   projectDescription,
   projectId,
-  width,
+  desktopWidth,
+  mobileWidth,
   priority = false,
   onImageClick,
 }: ImageViewerProps) {
@@ -50,14 +52,14 @@ export default function ImageViewer({
           width={1000}
           height={1000}
           style={{
-            width: isLargerThan("sm") ? `${width}%` : "100%",
+            width: isLargerThan("sm") ? `${desktopWidth}%` : `${mobileWidth}%`,
             maxHeight: "100%",
             height: "auto",
             objectFit: "contain",
             cursor: "pointer",
           }}
           priority={priority}
-          sizes={isLargerThan("sm") ? `${width}%` : "100%"}
+          sizes={isLargerThan("sm") ? `${desktopWidth}%` : `${mobileWidth}%`}
         />
       </div>
 

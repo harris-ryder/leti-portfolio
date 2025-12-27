@@ -35,7 +35,8 @@ export interface ProjectText {
 
 export interface ProjectHomepageCover {
   src: string;
-  width: number;
+  desktopWidth: number;
+  mobileWidth: number;
 }
 
 export const PROJECTS: Project[] = [

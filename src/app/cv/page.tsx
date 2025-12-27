@@ -60,7 +60,7 @@ export default function CVPage() {
               </p>
             </div>
 
-            <div className="relative w-full">
+            <div className="relative w-full md:mt-[200px]">
               <Image
                 src="https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/misc/2.webp"
                 alt="Leti Ryder"

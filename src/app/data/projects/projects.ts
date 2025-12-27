@@ -11,7 +11,10 @@ import {
   seasonalLivingPodArticle,
   seasonalLivingPodHomepageCovers,
 } from "./seasonal-living-pod";
-import { barcelonaByHandHomepageCovers } from "./barcelona-by-hand";
+import {
+  barcelonaByHandArticle,
+  barcelonaByHandHomepageCovers,
+} from "./barcelona-by-hand";
 import { strangeBedfellowsHomepageCovers } from "./strange-bedfellows";
 
 export interface Project {
@@ -79,7 +82,7 @@ export const PROJECTS: Project[] = [
     description: "Barcelona by Hand",
     id: "barcelona-by-hand",
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/barcelona-by-hand/2.webp",
-    article: [],
+    article: barcelonaByHandArticle,
     homepageCovers: barcelonaByHandHomepageCovers,
   },
   {

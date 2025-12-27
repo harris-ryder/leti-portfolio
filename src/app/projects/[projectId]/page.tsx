@@ -55,7 +55,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <NavigationLayout>
         <div className="h-full w-full flex flex-col justify-center items-center font-arial-italic font-light">
           <p>{project.description}</p>
-          <p> "In progress."</p>
+          <p> In progress.</p>
         </div>
       </NavigationLayout>
     );
@@ -111,10 +111,12 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <div className="flex gap-8 h-full" style={{ minWidth: "min-content" }}>
           {columns.map((column, colIndex) => {
             // Check if any image in this column has a custom width
-            const customWidth = column.find(
+            const imageWithCustomWidth = column.find(
               (item) => isProjectImage(item) && item.columnWidth
-            )?.columnWidth;
-            const columnWidth = customWidth || 400;
+            );
+            const columnWidth = (imageWithCustomWidth && isProjectImage(imageWithCustomWidth)) 
+              ? imageWithCustomWidth.columnWidth || 400
+              : 400;
 
             return (
               <div

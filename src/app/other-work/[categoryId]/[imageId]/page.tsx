@@ -39,7 +39,7 @@ export default async function ImagePage({ params }: ImagePageProps) {
   return (
     <NavigationLayout>
       <div className="w-full h-full min-h-0 overflow-y-auto p-6 px-10">
-        <div className="min-h-full flex justify-center items-center">
+        <div className="min-h-full flex justify-center items-center bg-green-500">
           <div className="max-w-2xl w-fit">
             <Image
               src={image.src}

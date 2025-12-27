@@ -14,7 +14,7 @@ export interface OtherWorkText {
   id: string;
   src: string;
   description: string;
-  link: string;
+  link?: string;
   content?: string; // If there is a link content isn't needed
 }
 

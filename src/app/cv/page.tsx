@@ -4,63 +4,146 @@ import Image from "next/image";
 export default function CVPage() {
   return (
     <NavigationLayout>
-      <div className="w-full h-full min-h-0 overflow-y-auto p-6 px-10 flex sm:justify-center sm:items-center">
-        <div className="flex gap-10 sm:flex-row flex-col">
+      <div className="w-full h-full min-h-0 overflow-y-auto p-6 px-10 flex md:justify-center md:items-center">
+        <div className="flex gap-10 md:flex-row flex-col md:h-full">
           {/*Column 1 - About*/}
-          <div className="flex-1 h-full flex flex-col gap-6">
+          <div className="md:flex-1 md:h-full flex flex-col gap-6">
             <h2 className="font-arial font-bold tracking-wider mb-2">About</h2>
             <p className="font-arial text-sm leading-relaxed">
-              Leti Ryder is a writer and artist based in London. She is the
-              author of the book <i>The Art of the Brick</i> and the founder of
-              the art collective <i>The Brick House</i>.
+              Leti Ryder will graduate with an M.Arch from Princeton University
+              in May 2026, made possible by her Princeton University Fellowship.
+              While at Princeton, she has been a teaching assistant for Mario
+              Gandelsonas’ undergraduate Studio and Michael Meredith’s Thesis
+              Prep. At Princeton, she has been developing a unique process for
+              developing the architectural project: beginning with the design of
+              moments, or interfaces between body and architectural surface.
+              This idea is the basis of her Thesis. She works both by hand and
+              digitally, and is also interested in photography, writing and
+              collage.
             </p>
 
             <p className="font-arial text-sm leading-relaxed">
-              Leti Ryder is a writer and artist based in London. She is the
-              author of the book <i>The Art of the Brick</i> and the founder of
-              the art collective <i>The Brick House</i>.
+              In the summer of 2025 she interned at Flores & Prats Architects,
+              developing the design for an upcoming adaptive reuse exhibition at
+              arc en rêve centre d'architecture, Bordeaux, and assisted with
+              their Columbia University studio syllabus for Fall 2025. She has
+              also worked for MOS Architects, primarily on the recently released
+              Public Spaces, NY book but also the 2025 Venice Biennale and the
+              Building With Writing Stan Allen Exhibition at Princeton
+              University. Leti developed a research-drawing project of Barcelona
+              with Christine Boyer in Summer 2025 and designed the cover for
+              Pidgin 33, Princeton University’s prominent architecture journal,
+              in Spring 2025. She also won a SARA NY{" "}
+              <a
+                className="underline"
+                href="https://www.sarany.org/2025-design-awards"
+              >
+                Design Award of Honor
+              </a>{" "}
+              in 2025.
             </p>
 
             <p className="font-arial text-sm leading-relaxed">
-              Leti Ryder is a writer and artist based in London. She is the
-              author of the book <i>The Art of the Brick</i> and the founder of
-              the art collective <i>The Brick House</i>.
+              Leti has a first-class BA in Architecture from the University of
+              Cambridge, where she was a Paul Mickelthwaite Scholar. She was
+              also a recipient of the Parry Dutton Award to enable travel to the
+              US. While at Cambridge, she served as President of the Cambridge
+              Union, the University’s largest society with over 70,000 members.
+              Through this position she designed the{" "}
+              <a
+                className="underline"
+                href="https://issuu.com/thecambridgeunion/docs/termcard_online_final/1"
+              >
+                Easter Term 2022 termcard
+              </a>
+              , interviewed Stormy Daniels and addressed President Zelenskyy
+              among others. At Cambridge she also served as a May Ball set
+              designer, an editor for the Arts section of Varsity Newspaper and
+              a photographer for ARCSOC.
             </p>
           </div>
 
           {/*Column 2 - Publications*/}
-          <div className="flex-1 h-full flex flex-col gap-6">
+          <div className="md:flex-1 md:h-full flex flex-col gap-6">
             <h2 className="font-arial font-bold tracking-wider mb-2">
               Publications
             </h2>
             <div className="flex flex-col gap-2">
-              <p className="font-arial text-sm leading-relaxed">2025 Yeet</p>
-              <p className="font-arial text-sm leading-relaxed">2024 Yeet</p>
-              <p className="font-arial text-sm leading-relaxed">2023 Yeet</p>
+              <p className="font-arial text-sm leading-relaxed">
+                12/ 2025{" "}
+                <a
+                  className="underline"
+                  href="https://ex-journal.com/ukam-cors"
+                >
+                  The E/X Journal
+                </a>
+                . Contributor{" "}
+              </p>
+              <p className="font-arial text-sm leading-relaxed">
+                11/ 2025{" "}
+                <a
+                  className="underline"
+                  href="https://www.park-books.com/en/produkt/public-spaces-ny/1661"
+                >
+                  Public Spaces, NY
+                </a>
+                . MOS. Research Assistant{" "}
+              </p>
+              <p className="font-arial text-sm leading-relaxed">
+                06/ 2025 Everything is in the Process of Becoming Something
+                Else, Venice Biennalle. MOS. Research Assistant{" "}
+              </p>
+              <p className="font-arial text-sm leading-relaxed">
+                05/ 2025{" "}
+                <a
+                  className="underline"
+                  href="https://www.pidgin.press/shop/p/issue-33"
+                >
+                  Pidgin Issue 33
+                </a>
+                . Cover Design{" "}
+              </p>
+              <p className="font-arial text-sm leading-relaxed">
+                09/2024 Photograph permanently on display at Prospect House,
+                commissioned by Princeton University Art Museum
+              </p>
+              <p className="font-arial text-sm leading-relaxed">
+                09/ 2021 Mixed Group Show at Gallerie V, Cambridge.
+                https://www.galleriev.com/Live/index.php?option=com_sppagebuilder&view=page&id=14
+              </p>
+              <p className="font-arial text-sm leading-relaxed">
+                05/ 2021{" "}
+                <a
+                  className="underline"
+                  href="https://shop.varsity.co.uk/shop/product/mays-twenty-nine-2021"
+                >
+                  The Mays 29
+                </a>
+                . Contributor
+              </p>
             </div>
           </div>
 
           {/*Column 3 - Contact*/}
-          <div className="flex-1 h-full flex flex-col gap-6">
+          <div className="md:flex-1 md:h-full flex flex-col gap-6">
             <h2 className="font-arial font-bold tracking-wider mb-2">
               Contact
             </h2>
 
-            <div className="flex flex-col gap-2">
-              <p className="font-arial text-sm leading-relaxed">Email</p>
-              <p className="font-arial text-sm leading-relaxed">
-                letiryder@gmail.com
-              </p>
-            </div>
+            <p className="font-arial text-sm leading-relaxed">
+              letiryder101@gmail.com
+            </p>
 
-            <div className="flex flex-col gap-2">
-              <p className="font-arial text-sm leading-relaxed">Phone</p>
-              <p className="font-arial text-sm leading-relaxed">
-                +44 7777 777777
-              </p>
-            </div>
+            <p className="font-arial text-sm leading-relaxed">
+              <a
+                className="underline"
+                href="https://www.instagram.com/letiaryder/"
+              >
+                Instagram
+              </a>
+            </p>
 
-            <div className="relative w-full md:mt-[200px]">
+            <div className="relative w-full md:mt-auto">
               <Image
                 src="https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/misc/2.webp"
                 alt="Leti Ryder"

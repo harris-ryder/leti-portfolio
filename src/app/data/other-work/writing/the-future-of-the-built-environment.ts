@@ -1,7 +1,6 @@
 export const theFutureOfTheBuiltEnvironment = `
 <p>The Future of the Built Environment</p>
 <p>29 November 2025</p>
-<p>29 November 2025</p>
  
 <p>It is strange to read Emanuele Coccia’s Metamorphoses while my body is under siege. When I first arrived in the Dominican Republic, I assumed I was the foreign object entering the environment, but soon it was the other way round. My stomach is presently a cocoon to a bug, an ideal, warm shelter for the bug to feed and reproduce. Though it was once only a single bacterium to begin with, within 7 hours it has doubled so many times that it now numbers over a million.</p>
  

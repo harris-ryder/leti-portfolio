@@ -5,7 +5,7 @@ type ProjectArticle = Project["article"];
 export const seasonalLivingPodArticle: ProjectArticle = [
   {
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/seasonal-living-pod/1.webp",
-    description: "Exterior view of the living pod in summer configuration",
+    description: "Initial collage for living pod shape and entrance, 1’=1/8",
     fit: "cover",
     newLine: false,
   },
@@ -14,51 +14,61 @@ export const seasonalLivingPodArticle: ProjectArticle = [
     newLine: false,
   },
   {
-    text: "The Seasonal Living Pod explores the relationship between temporary architecture and the cyclical nature of human habitation. This project challenges conventional notions of permanence in residential design.",
+    text: `Tea Houses and their rituals permeate all elements of Japanese culture. A Tea House is a place outside of the world that incorporates the world. The Tea Ceremony is all about composing tension, where different levels of formality meet and where elements are always reacting to the grid of the tatami mat but never corresponding to it.
+This isn’t a Tea House, it is something between a scout camping expedition and a zen practice, in living with the seasons, and with the landscape.The formality of the bar meets the informality of irregular pods, weaved with bamboo by inhabitants.
+`,
     newLine: true,
   },
   {
-    text: "Designed as a modular system, the pod adapts to seasonal changes through a series of transformable panels and adjustable ventilation systems. The structure responds to environmental conditions while maintaining a minimal footprint.",
+    text: `This is a living pod to be lived in across all four seasons of a year. When inhabitants arrive, they bring toilet rolls, duty free purchases from the airport and a mindset of survivalism with them. They might stuff their clothes into the weaved walls to better insulate the pod. As Spring turns into Summer, inhabitants may move their bed to an opening to make the most of the breeze. It’s also rain season, so a tarp is thrown over, and rainwater collected. Experience is brought back into architecture - in Summer they need shade instead of AC, in winter a coat, a hearth and a shrunken space keep them warm. By bringing in ready-made items to this isolated experience, the project aims to question: what is the connection to the outside world in this pod?`,
     newLine: false,
   },
   {
     text: "Each season brings a different configuration: expanded outdoor living spaces in summer, insulated cocoon-like interiors for winter, and transitional arrangements for spring and autumn.",
-    newLine: true,
+    newLine: false,
   },
   {
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/seasonal-living-pod/2.webp",
-    description: "Interior perspective showing flexible living space",
+    description:
+      "Plan and section diagram of the pod throughout the four seasons, collage and drawing, 1’=⅛",
+    fit: "cover",
+    newLine: true,
+    columnWidth: 900,
+  },
+  {
+    src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/seasonal-living-pod/3.webp",
+    description: "Model weaved by hand, bamboo, 1’=⅛",
     fit: "cover",
     newLine: false,
   },
   {
-    src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/seasonal-living-pod/3.webp",
-    description: "Detail of the transformable panel system",
-    fit: "cover",
+    text: `The pods are nested into a bar superstructure. It is an intermediate between the pods and the environment beyond. It creates communal spaces and a landscape within the landscape.`,
     newLine: true,
   },
   {
-    text: "Materials were selected for their durability and environmental responsiveness: locally sourced timber, recycled aluminum cladding, and high-performance glazing that can be completely opened or sealed depending on weather conditions.",
+    src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/seasonal-living-pod/7.webp",
+    description: "",
+    fit: "cover",
+    newLine: false,
+  },
+  {
+    src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/seasonal-living-pod/6.webp",
+    description: "The pods in the bar in the landscape, 1’=1/32",
+    fit: "cover",
     newLine: true,
   },
   {
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/seasonal-living-pod/4.webp",
-    description: "Axonometric drawing showing seasonal configurations",
-    fit: "contain",
+    description: "Elevation view from North West approach",
+    fit: "cover",
     newLine: true,
-  },
-  {
-    text: "The project addresses critical questions about resource efficiency and adaptive living, proposing an architecture that evolves with its inhabitants' needs throughout the year.",
-    newLine: false,
-  },
-  {
-    text: "By embracing impermanence and change, the Seasonal Living Pod offers a new paradigm for sustainable residential design in varying climatic conditions.",
-    newLine: true,
+    columnWidth: 1000,
   },
   {
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/seasonal-living-pod/5.webp",
-    description: "Night view showing illuminated interior",
-    fit: "contain",
+    description:
+      "View into the living quarters from the deck clearing of bathhouse, 1’=1/1",
+    fit: "cover",
     newLine: true,
   },
 ];

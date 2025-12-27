@@ -26,6 +26,7 @@ export interface ProjectImage {
   description: string;
   fit: "contain" | "cover";
   newLine: boolean;
+  columnWidth?: number;
 }
 
 export interface ProjectText {

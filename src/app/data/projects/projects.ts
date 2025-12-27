@@ -16,6 +16,7 @@ import {
   barcelonaByHandHomepageCovers,
 } from "./barcelona-by-hand";
 import { strangeBedfellowsHomepageCovers } from "./strange-bedfellows";
+import { bermondseyTownHallArticle } from "./bermondsey-town-hall";
 
 export interface Project {
   description: string;
@@ -89,7 +90,7 @@ export const PROJECTS: Project[] = [
     description: "Bermondsey Town Hall",
     id: "bermondsey-town-hall",
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/bermondsey-town-hall/2.webp",
-    article: [],
+    article: bermondseyTownHallArticle,
     homepageCovers: [],
   },
   {

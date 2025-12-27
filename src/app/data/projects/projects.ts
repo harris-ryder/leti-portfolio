@@ -1,6 +1,12 @@
 import { tenYearsOfMourningHomepageCovers } from "./10-years-of-mourning";
-import { birthingHouseForCommuneHomepageCovers } from "./birthing-house-for-commune";
-import { housesForPrincetonHomepageCovers } from "./houses-for-princeton";
+import {
+  birthingHouseForCommuneHomepageCovers,
+  birthinHouseForCommuneArticle,
+} from "./birthing-house-for-commune";
+import {
+  housesForPrincetonArticle,
+  housesForPrincetonHomepageCovers,
+} from "./houses-for-princeton";
 import {
   seasonalLivingPodArticle,
   seasonalLivingPodHomepageCovers,
@@ -59,14 +65,14 @@ export const PROJECTS: Project[] = [
     description: "Houses for Princeton",
     id: "houses-for-princeton",
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/houses-for-princeton/4.webp",
-    article: [],
+    article: housesForPrincetonArticle,
     homepageCovers: housesForPrincetonHomepageCovers,
   },
   {
     description: "Commune Birthing House",
     id: "birthing-house-for-commune",
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/birthing-house-for-commune/7.webp",
-    article: [],
+    article: birthinHouseForCommuneArticle,
     homepageCovers: birthingHouseForCommuneHomepageCovers,
   },
   {

@@ -21,6 +21,12 @@ export default function Home() {
       desktopWidth: 50,
       mobileWidth: 100,
     },
+    {
+      projectDescription: "Life Drawing",
+      src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/misc/4.webp",
+      desktopWidth: 50,
+      mobileWidth: 80,
+    },
   ];
   const firstImage = homeImages[0];
 

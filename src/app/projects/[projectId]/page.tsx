@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import NavigationLayout from "../../components/navigation-layout";
 import { PROJECTS, ProjectContent } from "../../data/projects/projects";
+import HorizontalScrollIndicator from "../../components/horizontal-scroll-indicator";
+import VerticalScrollIndicator from "../../components/vertical-scroll-indicator";
 
 interface ProjectPageProps {
   params: Promise<{
@@ -21,7 +23,7 @@ function ColumnScroller({
   return (
     <>
       {/* Mobile/Tablet: Single column with vertical scroll */}
-      <div className="h-full w-full overflow-y-auto p-6 px-10 lg:hidden">
+      <div className="h-full w-full overflow-y-auto p-6 px-10 lg:hidden [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
         <div className="space-y-6">
           {elements.map((el, i) => {
             if (el.type === "newColumn") {
@@ -191,6 +193,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   return (
     <NavigationLayout>
+      <HorizontalScrollIndicator />
+      <VerticalScrollIndicator />
       <ColumnScroller elements={project.article} />
     </NavigationLayout>
   );

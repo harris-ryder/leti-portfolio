@@ -31,7 +31,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     <NavigationLayout>
       <div className="w-full h-full min-h-0 overflow-y-auto p-6 px-10">
         <div className="min-h-full flex justify-center items-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6 [@media(min-aspect-ratio:17/10)]:gap-x-32">
             {category.work.map((work, index) => {
               const isText = isOtherWorkText(work);
               const href = isText && work.link ? work.link : `/other-work/${categoryId}/${work.id}`;

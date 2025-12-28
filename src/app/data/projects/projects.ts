@@ -28,27 +28,15 @@ export interface Project {
   description: string;
   id: string;
   src: string;
-  article: Array<ProjectImage | ProjectText | ProjectTitle>;
+  article: ProjectContent[];
   homepageCovers: Array<ProjectHomepageCover>;
 }
 
-export interface ProjectTitle {
-  title: string;
-  newLine: boolean;
-}
-
-export interface ProjectImage {
-  src: string;
-  description: string;
-  fit: "contain" | "cover";
-  newLine: boolean;
-  columnWidth?: number;
-}
-
-export interface ProjectText {
-  text: string;
-  newLine: boolean;
-}
+export type ProjectContent =
+  | { type: "title"; title: string }
+  | { type: "image"; src: string; description?: string; columnWidth?: number }
+  | { type: "text"; text: string[]; maxWidth?: number }
+  | { type: "newColumn" };
 
 export interface ProjectHomepageCover {
   src: string;

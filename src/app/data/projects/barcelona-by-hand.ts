@@ -1,6 +1,4 @@
-import { Project, ProjectHomepageCover } from "./projects";
-
-type ProjectArticle = Project["article"];
+import { ProjectContent, ProjectHomepageCover } from "./projects";
 
 export const barcelonaByHandHomepageCovers: ProjectHomepageCover[] = [
   {
@@ -10,34 +8,26 @@ export const barcelonaByHandHomepageCovers: ProjectHomepageCover[] = [
   },
 ];
 
-export const barcelonaByHandArticle: ProjectArticle = [
+export const barcelonaByHandArticle: ProjectContent[] = [
   {
+    type: "title",
     title: "Barcelona by Hand",
-    newLine: false,
   },
   {
-    text: ` 
-Date: August 2025
-`,
-    newLine: false,
+    type: "text",
+    text: [
+      "Date: August 2025",
+      "Instructor: Christine Boyer",
+      "From Pla de Palau to Carrer de Sant Pere Mitjà, Barcelona. 51 drawings collaged."
+    ],
   },
   {
-    text: ` 
-Instructor: Christine Boyer
-`,
-    newLine: false,
+    type: "newColumn",
   },
   {
-    text: ` 
-From Pla de Palau to Carrer de Sant Pere Mitjà, Barcelona. 51 drawings collaged.
-`,
-    newLine: true,
-  },
-  {
+    type: "image",
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/barcelona-by-hand/2.webp",
-    description: "Initial collage for living pod shape and entrance, 1’=1/8",
-    fit: "cover",
+    description: "Initial collage for living pod shape and entrance, 1'=1/8",
     columnWidth: 800,
-    newLine: false,
   },
 ];

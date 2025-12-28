@@ -1,6 +1,5 @@
-import { Project, ProjectHomepageCover } from "./projects";
+import { ProjectContent, ProjectHomepageCover } from "./projects";
 
-type ProjectArticle = Project["article"];
 
 export const housesForPrincetonHomepageCovers: ProjectHomepageCover[] = [
   {
@@ -10,46 +9,52 @@ export const housesForPrincetonHomepageCovers: ProjectHomepageCover[] = [
   },
 ];
 
-export const housesForPrincetonArticle: ProjectArticle = [
+export const housesForPrincetonArticle: ProjectContent[] = [
   {
+    type: "image",
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/houses-for-princeton/2.webp",
-    description: "Initial collage for living pod shape and entrance, 1’=1/8",
-    fit: "cover",
-    newLine: false,
+    description: "Initial collage for living pod shape and entrance, 1'=1/8",
   },
   {
+    type: "title",
     title: "Houses For Princeton",
-    newLine: true,
   },
   {
+    type: "newColumn",
+  },
+  {
+    type: "image",
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/houses-for-princeton/1.webp",
-    description: "Initial collage for living pod shape and entrance, 1’=1/8",
-    fit: "cover",
+    description: "Initial collage for living pod shape and entrance, 1'=1/8",
     columnWidth: 900,
-    newLine: true,
   },
   {
+    type: "newColumn",
+  },
+  {
+    type: "image",
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/houses-for-princeton/3.webp",
-    description: "Initial collage for living pod shape and entrance, 1’=1/8",
-    fit: "cover",
-    newLine: true,
+    description: "Initial collage for living pod shape and entrance, 1'=1/8",
   },
   {
+    type: "newColumn",
+  },
+  {
+    type: "image",
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/houses-for-princeton/4.webp",
-    description: "Initial collage for living pod shape and entrance, 1’=1/8",
-    fit: "cover",
-    newLine: true,
+    description: "Initial collage for living pod shape and entrance, 1'=1/8",
   },
   {
+    type: "newColumn",
+  },
+  {
+    type: "image",
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/houses-for-princeton/5.webp",
-    description: "Initial collage for living pod shape and entrance, 1’=1/8",
-    fit: "cover",
-    newLine: false,
+    description: "Initial collage for living pod shape and entrance, 1'=1/8",
   },
   {
+    type: "image",
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/houses-for-princeton/6.webp",
-    description: "Initial collage for living pod shape and entrance, 1’=1/8",
-    fit: "cover",
-    newLine: false,
+    description: "Initial collage for living pod shape and entrance, 1'=1/8",
   },
 ];

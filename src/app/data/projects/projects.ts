@@ -1,4 +1,7 @@
-import { tenYearsOfMourningHomepageCovers } from "./10-years-of-mourning";
+import {
+  tenYearsOfMourningArticle,
+  tenYearsOfMourningHomepageCovers,
+} from "./10-years-of-mourning";
 import {
   birthingHouseForCommuneHomepageCovers,
   birthinHouseForCommuneArticle,
@@ -100,7 +103,7 @@ export const PROJECTS: Project[] = [
     description: "10 Years of Mourning",
     id: "10-years-of-mourning",
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/ten-years-of-mourning/8.webp",
-    article: [],
+    article: tenYearsOfMourningArticle,
     homepageCovers: tenYearsOfMourningHomepageCovers,
   },
   {

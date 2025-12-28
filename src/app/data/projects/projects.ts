@@ -15,7 +15,10 @@ import {
   barcelonaByHandArticle,
   barcelonaByHandHomepageCovers,
 } from "./barcelona-by-hand";
-import { strangeBedfellowsHomepageCovers } from "./strange-bedfellows";
+import {
+  strangeBedfellowsArticle,
+  strangeBedfellowsHomepageCovers,
+} from "./strange-bedfellows";
 import { bermondseyTownHallArticle } from "./bermondsey-town-hall";
 
 export interface Project {
@@ -104,7 +107,7 @@ export const PROJECTS: Project[] = [
     description: "Strange Bedfellows",
     id: "strange-bedfellows",
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/strange-bedfellows/10.webp",
-    article: [],
+    article: strangeBedfellowsArticle,
     homepageCovers: strangeBedfellowsHomepageCovers,
   },
 ];

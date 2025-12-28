@@ -76,7 +76,7 @@ function ColumnScroller({
       </div>
 
       {/* Desktop: Multi-column with horizontal scroll */}
-      <div className="hidden lg:block h-full w-full overflow-x-auto overflow-y-hidden px-10">
+      <div className="hidden lg:block h-full w-full overflow-x-auto overflow-y-hidden px-10 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
         <div
           className="h-full box-border py-8"
           style={{

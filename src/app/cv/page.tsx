@@ -13,11 +13,9 @@ export default function CVPage() {
               Leti Ryder will graduate with an M.Arch from Princeton University
               in May 2026. While at Princeton, she has been a teaching assistant
               for Mario Gandelsonas’ undergraduate Studio and Michael Meredith’s
-              Thesis Prep. At Princeton, she has become interested in design as
-              the XS scale - the interface between the body and architectural
-              surface. This is the basis of her Thesis. She works both by hand
-              and digitally, and is also interested in photography, writing and
-              collage.
+              Thesis Prep. At Princeton, she has become interested in design at
+              the XS scale. This is the basis of her Thesis. She works both by
+              hand and digitally.
             </p>
 
             <p className="font-arial text-sm leading-relaxed">
@@ -25,17 +23,15 @@ export default function CVPage() {
               She has also worked for MOS Architects, primarily on the recently
               released Public Spaces, NY book but also the 2025 Venice Biennale
               and the Building With Writing Stan Allen Exhibition at Princeton
-              University. Leti developed a research-drawing project of Barcelona
-              with Christine Boyer in Summer 2025 and designed the cover for
-              Pidgin 33, Princeton University’s prominent architecture journal,
-              in Spring
+              University. In 2025 Leti developed a research-drawing project of
+              Barcelona with Christine Boyer, designed the cover for Pidgin 33
+              and won a{" "}
               <a
                 className="underline"
                 href="https://www.sarany.org/2025-design-awards"
               >
-                Design Award of Honor
-              </a>{" "}
-              in 2025.
+                Design Award of Honor.
+              </a>
             </p>
 
             <p className="font-arial text-sm leading-relaxed">

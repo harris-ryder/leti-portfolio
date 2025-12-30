@@ -18,7 +18,7 @@ export const barcelonaByHandArticle: ProjectContent[] = [
     text: [
       "Date: August 2025",
       "Instructor: Christine Boyer",
-      "From Pla de Palau to Carrer de Sant Pere Mitjà, Barcelona. 51 drawings collaged."
+      "From Pla de Palau to Carrer de Sant Pere Mitjà, Barcelona. 51 drawings collaged.",
     ],
   },
   {

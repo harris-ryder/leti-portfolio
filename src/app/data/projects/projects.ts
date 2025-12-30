@@ -78,7 +78,7 @@ export const PROJECTS: Project[] = [
     id: "barcelona-by-hand",
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/barcelona-by-hand/2.webp",
     article: barcelonaByHandArticle,
-    homepageCovers: barcelonaByHandHomepageCovers,
+    homepageCovers: [],
   },
   {
     description: "Bermondsey Town Hall",

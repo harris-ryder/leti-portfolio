@@ -8,7 +8,7 @@ export const WRITING: Array<OtherWorkText> = [
     id: "warmer-toastier-sexier",
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/other-work/writing/7.webp",
     description: "Warmer, Toastier, Sexier",
-    link: "https://www.warmertoastiersexier.com",
+    link: "https://drive.google.com/file/d/1tO3hJHgANb5JvbZ3LmvHy9DcQbidY6RY/view?usp=sharing",
   },
   {
     id: "a-city-can-be-a-mutual-friend",

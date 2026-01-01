@@ -32,16 +32,13 @@ export const barcelonaByHandArticle: ProjectContent[] = [
   {
     type: "image",
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/barcelona-by-hand/2.webp?v=123",
-    description: "Initial collage for living pod shape and entrance, 1'=1/8",
   },
   {
     type: "image",
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/barcelona-by-hand/3.webp",
-    description: "Initial collage for living pod shape and entrance, 1'=1/8",
   },
   {
     type: "image",
     src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/barcelona-by-hand/4.webp",
-    description: "Initial collage for living pod shape and entrance, 1'=1/8",
   },
 ];

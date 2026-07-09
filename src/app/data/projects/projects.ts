@@ -23,6 +23,10 @@ import {
   strangeBedfellowsHomepageCovers,
 } from "./strange-bedfellows";
 import { bermondseyTownHallArticle } from "./bermondsey-town-hall";
+import {
+  theBlackhouseRevisitedArticle,
+  theBlackhouseRevisitedHomepageCovers,
+} from "./the-blackhouse-revisited";
 
 export interface Project {
   description: string;
@@ -46,11 +50,11 @@ export interface ProjectHomepageCover {
 
 export const PROJECTS: Project[] = [
   {
-    description: "M.Arch Thesis: the XS",
-    id: "thesis-project-xs",
-    src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/thesis-project-xs/1.webp",
-    article: [],
-    homepageCovers: [],
+    description: "The Blackhouse Revisited",
+    id: "the-blackhouse-revisited",
+    src: "https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/the-blackhouse-revisited/1.webp",
+    article: theBlackhouseRevisitedArticle,
+    homepageCovers: theBlackhouseRevisitedHomepageCovers,
   },
   {
     description: "Seasonal Living Pod",

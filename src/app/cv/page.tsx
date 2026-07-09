@@ -10,45 +10,12 @@ export default function CVPage() {
           <div className="md:flex-1 md:h-full flex flex-col gap-6">
             <h2 className="font-arial font-bold tracking-wider mb-2">About</h2>
             <p className="font-arial text-sm leading-relaxed">
-              Leti Ryder will graduate with an M.Arch from Princeton University
-              in May 2026. While at Princeton, she has been a teaching assistant
-              for Mario Gandelsonas’ undergraduate Studio and Michael Meredith’s
-              Thesis Prep. At Princeton, she has become interested in design at
-              the XS scale. This is the basis of her Thesis. She works both by
-              hand and digitally.
-            </p>
-
-            <p className="font-arial text-sm leading-relaxed">
-              In the summer of 2025 she interned at Flores & Prats Architects.
-              She has also worked for MOS Architects, primarily on the recently
-              released Public Spaces, NY book but also the 2025 Venice Biennale
-              and the Building With Writing Stan Allen Exhibition at Princeton
-              University. In 2025 Leti developed a research-drawing project of
-              Barcelona with Christine Boyer, designed the cover for Pidgin 33
-              and won a{" "}
-              <a
-                className="underline"
-                href="https://www.sarany.org/2025-design-awards"
-              >
-                Design Award of Honor.
-              </a>
-            </p>
-
-            <p className="font-arial text-sm leading-relaxed">
-              Leti has a first-class BA in Architecture from the University of
-              Cambridge, where she was a Paul Mickelthwaite Scholar. While at
-              Cambridge, she served as President of the Cambridge Union. Through
-              this position she designed the{" "}
-              <a
-                className="underline"
-                href="https://issuu.com/thecambridgeunion/docs/termcard_online_final/1"
-              >
-                Easter Term 2022 termcard
-              </a>
-              interviewed Stormy Daniels and addressed President Zelenskyy among
-              others. At Cambridge she also served as a May Ball set designer,
-              an editor for the Arts section of Varsity Newspaper and a
-              photographer for ARCSOC.
+              Leti Ryder holds an M.Arch from Princeton University (2026) and
+              a First Class BA from the University of Cambridge (2023). At
+              Princeton University she was a teaching assistant for Mario
+              Gandelsonas' undergraduate Studio and Michael Meredith's Thesis
+              Prep. She has worked at MOS Architects and interned at Flores &
+              Prats.
             </p>
           </div>
 

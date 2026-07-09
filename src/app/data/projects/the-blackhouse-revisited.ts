@@ -1,7 +1,9 @@
 import { ProjectContent, ProjectHomepageCover } from "./projects";
 
+// Bump `v` to bust the Blob CDN / next-image / browser caches after re-uploading an image.
+const VERSION = 1;
 const img = (n: number) =>
-  `https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/the-blackhouse-revisited/${n}.webp`;
+  `https://6rsxeq3ze0cbeqvf.public.blob.vercel-storage.com/projects/the-blackhouse-revisited/${n}.webp?v=${VERSION}`;
 
 export const theBlackhouseRevisitedArticle: ProjectContent[] = [
   // — Title / intro (PDF p.1)
@@ -421,8 +423,13 @@ export const theBlackhouseRevisitedArticle: ProjectContent[] = [
 
 export const theBlackhouseRevisitedHomepageCovers: ProjectHomepageCover[] = [
   {
-    src: img(1),
-    desktopWidth: 42,
+    src: img(5),
+    desktopWidth: 33,
+    mobileWidth: 100,
+  },
+  {
+    src: img(31),
+    desktopWidth: 30,
     mobileWidth: 100,
   },
 ];

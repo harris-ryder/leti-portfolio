@@ -50,9 +50,6 @@ export default function Home() {
             sizes={"100%"}
             quality={90}
           />
-          <p className="font-arial-italic font-normal">
-            {firstImage.projectDescription}
-          </p>
         </div>
       )}
 
